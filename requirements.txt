@@ -1,0 +1,66 @@
+# ─────────────────────────────
+# CORE LLM + LANGCHAIN STACK
+# ─────────────────────────────
+langchain>=0.1.14
+langgraph>=0.0.24
+openai>=1.25.0
+tiktoken
+
+# ─────────────────────────────
+# MULTILINGUAL EMBEDDINGS
+# ─────────────────────────────
+sentence-transformers>=2.2.2
+transformers>=4.40.0
+torch>=2.1.2
+
+# ─────────────────────────────
+# MULTIMODAL TOOLS
+# ─────────────────────────────
+serpapi                         # For Google Search (via Serper.dev or SERP API)
+youtube-transcript-api         # For extracting YouTube captions
+pypdf                           # Basic PDF loader
+unstructured                   # Robust PDF/document parsing
+pdfminer.six                   # PDF text extraction fallback
+
+# ─────────────────────────────
+# MULTILINGUAL TRANSLATION
+# ─────────────────────────────
+deep-translator                 # Easy translation (Google Translate, LibreTranslate)
+# OR: Use HuggingFace directly
+# huggingface-hub
+
+# ─────────────────────────────
+# VOICE INPUT/OUTPUT (OPTIONAL)
+# ─────────────────────────────
+whisper                         # Voice-to-text
+pydub                           # Audio manipulation
+soundfile                       # Required for audio formats
+elevenlabs                      # Text-to-speech (optional, needs API key)
+
+# ─────────────────────────────
+# BACKEND + FRONTEND
+# ─────────────────────────────
+fastapi
+uvicorn
+streamlit
+
+# ─────────────────────────────
+# LOGGING + MLOPS + EVALUATION
+# ─────────────────────────────
+langsmith
+promptfoo
+python-dotenv                  # For API keys and environment config
+pandas
+faiss-cpu                      # For vector search over embeddings
+typing_extensions
+
+# ─────────────────────────────
+# PIPELINE AUTOMATION (Optional)
+# ─────────────────────────────
+prefect                        # Lightweight task orchestrator
+# OR: airflow
+
+# ─────────────────────────────
+# TESTING (Optional for CI/CD)
+# ─────────────────────────────
+pytest
